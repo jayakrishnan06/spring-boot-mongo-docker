@@ -2,9 +2,9 @@ version: '3.1'
 
 services:
   springboot:
-    image: dockerhandson/spring-boot-mongo:latest
+    image: jskitcha/spring-boot-mongo:latest
     restart: always
-    container_name: springboot
+    container_name: springboot1
     ports:
       - 9090:8080
     working_dir: /opt/app
@@ -20,7 +20,7 @@ services:
 
   mongo:
     image: mongo
-    container_name: springboot-mongo
+    container_name: springboot-mongo1
 #    ports:  # for demo/debug purpose only
 #      - 27018:27017
     volumes:
